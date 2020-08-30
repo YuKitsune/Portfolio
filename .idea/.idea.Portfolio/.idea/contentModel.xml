@@ -68,7 +68,11 @@
           </e>
         </e>
         <e p="Pages" t="Include">
+          <e p="Code.razor" t="Include" />
+          <e p="Connect.razor" t="Include" />
           <e p="Index.razor" t="Include" />
+          <e p="Music.razor" t="Include" />
+          <e p="Photography.razor" t="Include" />
         </e>
         <e p="Portfolio.Blazor.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
