@@ -1,0 +1,60 @@
+﻿@page "/"
+
+<div class="content h-100 w-100 px-3 d-flex flex-column justify-content-center align-items-center">
+    
+    <!-- Introduction -->
+    <div class="d-flex flex-column justify-content-center" style="padding-right: 1.5rem;">
+        <h1 class="text-light">
+            G'day, I'm Eoin!
+            <br/>
+            <small class="text-muted">It's pronounced "Owen"...</small>
+        </h1>
+
+        <h4 class="text-light">I'm a @age year old, self-learning software engineer, hobbiest photohrapher, music producer, and DJ from Cork, Ireland, currently vibing out in Brisbane, Australia.</h4>
+    </div>
+    
+    <!-- Quickie section -->
+    <div class="container text-light">
+        <div class="row">
+            
+            <!-- Code -->
+            <div class="col-sm">
+                <h2>Code</h2>
+                <p>
+                    I'm a self-learning software engineer, currently working for a Point of Sale (POS) software company in Brisbane, Australia.
+                </p>
+                <p>
+                    My primary language of choice is C#, but I'm working on learning more landuages such as C/C++, Go, Java, and Swift.
+                </p>
+                <p>
+                    I'm familiar with many database engines, including Microsoft SQL Server, PostgreSQL and FirebirdSQL. I'm looking to start using MongoDB, Apache Cassandra, and Cosmos DB.
+                </p>
+                <p>
+                    If you wanna check out my code, head on over to my <a href="https://github.com/YuKitsune" target="_blank">GitHub</a>!
+                </p>
+            </div>
+            
+            <!-- Photography -->
+            <div class="col">
+                <h2>Photography</h2>
+            </div>
+        </div>
+        <div class="row">
+            
+            <!-- Music -->
+            <div class="col">
+                <h2>Code</h2>
+            </div>
+            
+            <!-- Connect -->
+            <div class="col">
+                <h2>Photography</h2>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+@code {
+    private int age => DateTime.Today.Year - new DateTime(2000, 07, 22).Year;
+}

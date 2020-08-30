@@ -1,0 +1,56 @@
+﻿
+<!-- Navbar header and toggle button for mobile -->
+<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">Eoin Motherway</a>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    
+    <!-- Profile image -->
+    <div class="profile-picture">
+        <img src="img/profile.jpeg" class="rounded mx-auto d-block" alt="Profile Image">
+    </div>
+    
+    <!-- Navigation links -->
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-info" aria-hidden="true"></span> About
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="code">
+                <span class="oi oi-code" aria-hidden="true"></span> Code
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="photography">
+                <span class="oi oi-camera-slr" aria-hidden="true"></span> Photography
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="music">
+                <span class="oi oi-musical-note" aria-hidden="true"></span> Music
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="connect">
+                <span class="oi oi-chat" aria-hidden="true"></span> Connect
+            </NavLink>
+        </li>
+    </ul>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
