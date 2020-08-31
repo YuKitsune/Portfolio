@@ -5,8 +5,19 @@
     <projectFile>Portfolio.Blazor/Portfolio.Blazor.csproj</projectFile>
   </component>
   <component name="BranchesTreeState">
-    <expand />
-    <select />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="BuildServerSettings">
     <option name="LOGIN" value="" />
@@ -32,13 +43,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="404bf14c-c8de-43c7-a4ce-b04b64d90f57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Portfolio.Blazor/Pages/Code.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Portfolio.Blazor/Pages/Connect.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Portfolio.Blazor/Pages/Music.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Portfolio.Blazor/Pages/Photography.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Portfolio/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Portfolio/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Portfolio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Portfolio/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio.Blazor/Pages/Code.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio.Blazor/Pages/Code.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portfolio.Blazor/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio.Blazor/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio.Blazor/wwwroot/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio.Blazor/wwwroot/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio.Blazor/wwwroot/img/riverfire_1.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,13 +88,13 @@
         <option value="$PROJECT_DIR$/Portfolio.Blazor/wwwroot/css/sidebar.css" />
         <option value="$PROJECT_DIR$/Portfolio.Blazor/wwwroot/index.html" />
         <option value="$PROJECT_DIR$/Portfolio.Blazor/Shared/NavMenu.razor" />
-        <option value="$PROJECT_DIR$/Portfolio.Blazor/Shared/MainLayout.razor" />
-        <option value="$PROJECT_DIR$/Portfolio.Blazor/wwwroot/css/app.css" />
-        <option value="$PROJECT_DIR$/Portfolio.Blazor/Pages/Index.razor" />
-        <option value="$PROJECT_DIR$/Portfolio.Blazor/Pages/Code.razor" />
         <option value="$PROJECT_DIR$/Portfolio.Blazor/Pages/Photography.razor" />
         <option value="$PROJECT_DIR$/Portfolio.Blazor/Pages/Music.razor" />
         <option value="$PROJECT_DIR$/Portfolio.Blazor/Pages/Connect.razor" />
+        <option value="$PROJECT_DIR$/Portfolio.Blazor/Pages/Index.razor" />
+        <option value="$PROJECT_DIR$/Portfolio.Blazor/wwwroot/css/app.css" />
+        <option value="$PROJECT_DIR$/Portfolio.Blazor/Shared/MainLayout.razor" />
+        <option value="$PROJECT_DIR$/Portfolio.Blazor/Pages/Code.razor" />
       </list>
     </option>
   </component>
@@ -101,6 +111,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/Portfolio.Blazor/node_modules/grunt" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
@@ -210,6 +226,7 @@
       <workItem from="1598601667885" duration="12474000" />
       <workItem from="1598658493156" duration="13541000" />
       <workItem from="1598755888842" duration="612000" />
+      <workItem from="1598840569003" duration="1638000" />
     </task>
     <servers />
   </component>
@@ -223,7 +240,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -234,34 +263,34 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1598756679160">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1598842130080">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1598756679160" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1598841810984" />
     <state width="2518" height="461" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1598700341954" />
-    <state width="819" height="295" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1598755968795" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1598842130080" />
     <state width="2518" height="461" key="GridCell.Tab.0.bottom/0.23.2560.1351@0.23.2560.1351" timestamp="1598699908143" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1598756679159">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1598842130078">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1598756679159" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1598841810983" />
     <state width="2518" height="461" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1598700341953" />
-    <state width="819" height="295" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1598755968794" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1598842130078" />
     <state width="2518" height="461" key="GridCell.Tab.0.center/0.23.2560.1351@0.23.2560.1351" timestamp="1598699908142" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1598756679159">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1598842130077">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1598756679159" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1598841810982" />
     <state width="2518" height="461" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1598700341953" />
     <state width="2518" height="423" key="GridCell.Tab.0.left/0.0.2560.1440@0.23.2560.1351" timestamp="1598667178872" />
-    <state width="819" height="295" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1598755968793" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1598842130077" />
     <state width="2518" height="461" key="GridCell.Tab.0.left/0.23.2560.1351@0.23.2560.1351" timestamp="1598699908141" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1598756679159">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1598842130078">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1598756679159" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1598841810984" />
     <state width="2518" height="461" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1598700341954" />
-    <state width="819" height="295" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1598755968794" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1598842130078" />
     <state width="2518" height="461" key="GridCell.Tab.0.right/0.23.2560.1351@0.23.2560.1351" timestamp="1598699908143" />
     <state width="2518" height="461" key="GridCell.Tab.1.bottom" timestamp="1598700341956">
       <screen x="0" y="0" width="2560" height="1440" />
