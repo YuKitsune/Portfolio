@@ -1,22 +1,22 @@
 ﻿@page "/"
 
-<div class="content h-100 w-100 px-3 d-flex flex-column justify-content-center align-items-center">
-    
-    <!-- Introduction -->
-    <div class="d-flex flex-column justify-content-center" style="padding-right: 1.5rem;">
-        <h1 class="text-light">
-            G'day, I'm Eoin!
-            <br/>
-            <small class="text-muted">It's pronounced "Owen"...</small>
-        </h1>
+<!-- I couldn't figure out how to use flexbox properly... -->
 
-        <h4 class="text-light">
-            I'm a @age year old, self-learning software engineer, entrepreneur, hobbiest photohrapher, music producer, and DJ from Cork, Ireland, currently vibing out in Brisbane, Australia.
-        </h4>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <CodeSection/>
+        </div>
+        <div class="col">
+            <PhotographySection/>
+        </div>
     </div>
-    
+    <div class="row">
+        <div class="col">
+            <MusicSection/>
+        </div>
+        <div class="col">
+            <ConnectSection/>
+        </div>
+    </div>
 </div>
-
-@code {
-    private int age => DateTime.Today.Year - new DateTime(2000, 07, 22).Year;
-}
