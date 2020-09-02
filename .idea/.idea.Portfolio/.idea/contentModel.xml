@@ -81,6 +81,7 @@
           <e p="MainLayout.razor" t="Include" />
           <e p="MusicSection.razor" t="Include" />
           <e p="PhotographySection.razor" t="Include" />
+          <e p="Profile.razor" t="Include" />
         </e>
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
