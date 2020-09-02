@@ -40,3 +40,16 @@ app {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.main-container {
+    max-width: calc(100vw - 2rem);
+    margin-top: 2rem;
+}
+
+.section {
+    margin: 1rem;
+}
+
+.sub-section {
+    margin: 1rem;
+}
