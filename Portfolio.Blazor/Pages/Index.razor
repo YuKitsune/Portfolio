@@ -2,21 +2,30 @@
 
 <!-- I couldn't figure out how to use flexbox properly... -->
 
-<div class="container">
+<div class="container main-container">
+    
+    <div class="row text-center">
+        <div class="col-sm">
+            <Profile/>
+        </div>
+    </div>
+    
+    <!-- Sections -->
     <div class="row">
-        <div class="col">
+        <div class="col-sm">
             <CodeSection/>
         </div>
-        <div class="col">
+        <div class="col-sm">
             <PhotographySection/>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
+    <div class="row" style="margin-top: 2rem;">
+        <div class="col-sm">
             <MusicSection/>
         </div>
-        <div class="col">
+        <div class="col-sm">
             <ConnectSection/>
         </div>
     </div>
+    
 </div>
