@@ -16,10 +16,22 @@
     <ItemGroup>
       <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css" />
       <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css.map" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="wwwroot\img" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-brands-400.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-brands-400.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-brands-400.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-brands-400.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-brands-400.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-regular-400.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-regular-400.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-regular-400.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-regular-400.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-regular-400.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-solid-900.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-solid-900.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-solid-900.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-solid-900.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\webfonts\fa-solid-900.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\sample-data\weather.json" />
     </ItemGroup>
 
 </Project>

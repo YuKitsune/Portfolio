@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
@@ -25,6 +26,11 @@ namespace Portfolio.Application
 
             await portfolioDbContext.Projects.AddAsync(project);
             await portfolioDbContext.SaveChangesAsync();
+        }
+        
+        public async Task<IEnumerable<Project>> GetProjectsAsync()
+        {
+            return await portfolioDbContext.Projects.ToListAsync();
         }
         
         public async Task UpdateProjectAsync(Project project)
