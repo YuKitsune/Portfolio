@@ -6,9 +6,12 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Portfolio.Blazor" t="IncludeRecursive">
+        <e p=".dockerignore" t="Include" />
         <e p="_Imports.razor" t="Include" />
         <e p="App.razor" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="dockerfile" t="Include" />
+        <e p="nginx.conf" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.1" t="Include">
@@ -37,13 +40,7 @@
             <e p="bootstrap.min.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
-          <e p="img" t="Include">
-            <e p="profile.jpeg" t="Include" />
-          </e>
           <e p="index.html" t="Include" />
-          <e p="sample-data" t="Include">
-            <e p="weather.json" t="Include" />
-          </e>
         </e>
       </e>
       <e p="Portfolio.sln" t="IncludeFlat" />
