@@ -44,8 +44,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="404bf14c-c8de-43c7-a4ce-b04b64d90f57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Portfolio.Blazor/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Portfolio/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Portfolio/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Portfolio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Portfolio/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -254,7 +252,7 @@
       <workItem from="1598840569003" duration="1638000" />
       <workItem from="1599038755019" duration="2913000" />
       <workItem from="1599282990046" duration="3375000" />
-      <workItem from="1599305139290" duration="2361000" />
+      <workItem from="1599305139290" duration="2817000" />
     </task>
     <servers />
   </component>
