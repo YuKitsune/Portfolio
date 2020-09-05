@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using Octokit
 
 <!-- I couldn't figure out how to use flexbox properly... -->
 
@@ -10,22 +11,44 @@
         </div>
     </div>
     
-    <!-- Sections -->
     <div class="row">
+        
+        <!-- Left column -->
         <div class="col-sm">
-            <CodeSection/>
+            <div class="row justify-content-center">
+                <div class="col-sm-6">
+                    <SkillsSection/>
+                </div>
+                <div class="col-sm-6">
+                    <CertificationsSection/>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6">
+                    <GoalsSection/>
+                </div>
+                <div class="col-sm-6">
+                    <ConnectSection/>
+                </div>
+            </div>
         </div>
-        <div class="col-sm">
-            <PhotographySection/>
-        </div>
+        
     </div>
-    <div class="row" style="margin-top: 2rem;">
+    <div class="row">
+        
         <div class="col-sm">
-            <MusicSection/>
+            <ProjectsSection/>
         </div>
-        <div class="col-sm">
-            <ConnectSection/>
-        </div>
+        
     </div>
-    
+
 </div>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        GitHubClient client = new GitHubClient(new ProductHeaderValue("YuKitsune"));
+        User user = await client.User.Get("YuKitsune");
+        
+    }
+}
