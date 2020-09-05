@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Portfolio.Application;
@@ -7,17 +9,24 @@ using Portfolio.Domain;
 
 namespace Portfolio.Api.Controllers
 {
+    [Authorize]
     public class ProjectsController : Controller
     {
-        private readonly ProjectService service;
+        private readonly ProjectService projectService;
         private readonly ILogger<ProjectService> logger;
+
+        public ProjectsController(ProjectService projectService, ILogger<ProjectService> logger)
+        {
+            this.projectService = projectService;
+            this.logger = logger;
+        }
         
         [HttpPost]
         public async Task<IActionResult> AddProject(Project project)
         {
             try
             {
-                await service.AddProjectAsync(project);
+                await projectService.AddProjectAsync(project);
                 return Ok();
             }
             catch (Exception ex)
@@ -27,12 +36,27 @@ namespace Portfolio.Api.Controllers
             }
         }
         
+        [HttpGet, AllowAnonymous]
+        public async Task<IActionResult> GetProjects()
+        {
+            try
+            {
+                IEnumerable<Project> projects = await projectService.GetProjectsAsync();
+                return Json(projects);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Failed to get projects.");
+                return BadRequest();
+            }
+        }
+        
         [HttpPost]
         public async Task<IActionResult> UpdateProject(Project project)
         {
             try
             {
-                await service.UpdateProjectAsync(project);
+                await projectService.UpdateProjectAsync(project);
                 return Ok();
             }
             catch (Exception ex)
@@ -47,7 +71,7 @@ namespace Portfolio.Api.Controllers
         {
             try
             {
-                await service.RemoveProjectAsync(project);
+                await projectService.RemoveProjectAsync(project);
                 return Ok();
             }
             catch (Exception ex)

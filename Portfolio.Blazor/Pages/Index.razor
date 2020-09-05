@@ -3,7 +3,7 @@
 
 <!-- I couldn't figure out how to use flexbox properly... -->
 
-<div class="container main-container">
+<div class="container">
     
     <div class="row text-center">
         <div class="col-sm">
@@ -13,42 +13,35 @@
     
     <div class="row">
         
-        <!-- Left column -->
         <div class="col-sm">
+            
             <div class="row justify-content-center">
-                <div class="col-sm-6">
+                <div class="col-sm-5">
                     <SkillsSection/>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-5">
                     <CertificationsSection/>
                 </div>
             </div>
+            
             <div class="row justify-content-center">
-                <div class="col-sm-6">
+                <div class="col-sm-5">
                     <GoalsSection/>
                 </div>
-                <div class="col-sm-6">
-                    <ConnectSection/>
-                </div>
             </div>
-        </div>
-        
-    </div>
-    <div class="row">
-        
-        <div class="col-sm">
-            <ProjectsSection/>
+            
         </div>
         
     </div>
 
 </div>
+    
+<footer class="footer text-center">
+    <div class="container">
+        <span class="text-muted">YuKitsune - @CurrentYear</span>
+    </div>
+</footer>
 
 @code {
-    protected override async Task OnInitializedAsync()
-    {
-        GitHubClient client = new GitHubClient(new ProductHeaderValue("YuKitsune"));
-        User user = await client.User.Get("YuKitsune");
-        
-    }
+    private string CurrentYear => DateTime.Now.Year.ToString();
 }
