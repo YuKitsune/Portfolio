@@ -67,6 +67,6 @@ jobs:
           envs: GITHUB_USERNAME, GITHUB_TOKEN
           script: |
             docker stop $(docker ps -a -q)
-            docker login -u $GITHUB_USERNAME -p $GITHUB_TOKEN docker.pkg.github.com
+            echo "$GITHUB_TOKEN" | docker login -u $GITHUB_USERNAME --password-stdin docker.pkg.github.com
             docker pull docker.pkg.github.com/yukitsune/portfolio/portfolio.blazor:latest
             docker run -dit -p 80:80 docker.pkg.github.com/yukitsune/portfolio/portfolio.blazor:latest
