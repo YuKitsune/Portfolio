@@ -68,5 +68,5 @@ jobs:
           script: |
             docker stop $(docker ps -a -q)
             docker login -u $GITHUB_USERNAME -p $GITHUB_TOKEN docker.pkg.github.com
-            docker pull docker.pkg.github.com/YuKitsune/Portfolio/portfolio.blazor:latest
-            docker run -dit -p 80:80 docker.pkg.github.com/YuKitsune/Portfolio/portfolio.blazor:latest
+            docker pull docker.pkg.github.com/yukitsune/portfolio/portfolio.blazor:latest
+            docker run -dit -p 80:80 docker.pkg.github.com/yukitsune/portfolio/portfolio.blazor:latest
