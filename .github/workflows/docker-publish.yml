@@ -64,9 +64,9 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          envs: GITHUB_USERNAME, GITHUB_TOKEN
+          envs: github.repository_owner, secrets.GITHUB_TOKEN
           script: |
             docker stop $(docker ps -a -q)
-            echo "$GITHUB_TOKEN" | docker login -u $GITHUB_USERNAME --password-stdin docker.pkg.github.com
+            docker login -u $GITHUB_USERNAME -p $GITHUB_TOKEN docker.pkg.github.com
             docker pull docker.pkg.github.com/yukitsune/portfolio/portfolio.blazor:latest
             docker run -dit -p 80:80 docker.pkg.github.com/yukitsune/portfolio/portfolio.blazor:latest
